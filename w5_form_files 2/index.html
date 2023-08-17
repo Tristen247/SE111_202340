@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name Here">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+
+    <form>
+
+        <table>
+            <th>
+              <tr>
+                <td>Labels</td>
+                <td>Form Feilds</td>
+              </tr>
+            </th>
+        
+            <tbody>
+              <tr>
+                <td><label for="gfirst">Parent/Gaurdian Name(s):</label>
+                </td>
+                <td>
+                    <input type="text" name="gfirst"
+                    id="g-first" required maxlength="20" placeholder="First Name"> <br>
+                    
+                    
+                    <input type="text" name="glast"
+                    id="g-last" required maxlength="20" placeholder="Last Name">  
+                </td>
+              </tr>
+              <!--nxt row-->
+              <tr>
+                <td><label for="cfirst">Childs First Name:</label>
+                </td>
+
+                <td><input type="text" name="cfirst"
+                    id="c-first" required placeholder="Childs first name">
+                </td>
+              </tr>
+              <!--nxt row-->
+              <tr>
+                <td><label for="age">Childs Age:</label></td>
+                <td><input type="number" name="age"
+                    value="3" required></td>
+              </tr>
+              <!--nxt row-->
+              <tr>
+                <td>Date and Time</td>
+                <td></td>
+              <tr>
+                <td><label for="date">Date:</label>
+                </td>
+                <td><input type="date" name="date" required>
+                </td>
+              </tr>
+              <!--nxt row-->
+              <tr>
+                <td><label for="time">Start Time</label></td>
+                <td><input type="time" required name="time"></td>
+                </tr>
+              <!--nxt row-->
+              <tr>
+                <td><label for="guests">Number of Guests</label></td>
+                <td><input type="number" name="guests" value="5"></td>
+              </tr>
+              <!--nxt row-->
+              <tr>
+                <td>Food</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><label for="size">Size</label>
+                </td>
+                <td><input type="radio" name="size" value="sm"> Sm
+                
+                
+                <input type="radio" name="size" value="md"> Md
+                
+                
+                <input type="radio" name="size" value="lg"> Lg
+                </td>
+              </tr>
+              <tr>
+                <td>Drinks</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cake</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Decorations</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Color Scheme</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Additional Comments</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+    
+    
+        </table>
+
+    </form>
+    
+</body>
+</html>
