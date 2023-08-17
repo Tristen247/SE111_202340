@@ -15,7 +15,7 @@
 <body>
     <!--Build your Table and Form here-->
 
-    <form>
+    <form method="GET" action="confirm.html">
 
         <table>
             <th>
@@ -40,7 +40,7 @@
               </tr>
               <!--nxt row-->
               <tr>
-                <td><label for="cfirst">Childs First Name:</label>
+                <td><label for="cfirst">Child's First Name:</label>
                 </td>
 
                 <td><input type="text" name="cfirst"
@@ -49,7 +49,7 @@
               </tr>
               <!--nxt row-->
               <tr>
-                <td><label for="age">Childs Age:</label></td>
+                <td><label for="age">Child's Age:</label></td>
                 <td><input type="number" name="age"
                     value="3" required></td>
               </tr>
@@ -91,28 +91,62 @@
                 </td>
               </tr>
               <tr>
-                <td>Drinks</td>
-                <td></td>
+                <td>
+                    <label for="drinks">Drinks</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="drink1"
+                        value="coke" checked="true"> <label for="drink1">Coke</label><br>
+
+                    <input type="checkbox" name="drink2"
+                        value="sprite"> <label for="drink2">Sprite</label><br>
+
+                    <input type="checkbox" name="drink3"
+                    value="fruit punch"> <label for="drink3">Fruit Punch</label><br>
+
+                    <input type="checkbox" name="drink4"
+                        value="lemonade"> <label for="drink4">Lemonade</label><br>
+
+                    <input type="checkbox" name="drink5"
+                    value="iced tea"> <label for="drink5">Iced Tea</label><br>
+
+                </td>
               </tr>
+              <!--row-->
               <tr>
-                <td>Cake</td>
-                <td></td>
+                <td><lable for="cake">Cake</lable></td>
+                <td>
+                    <select name="cake" id="cake">
+                        <option value="choclate" selected>Chocolate</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="bring my own">Bring my own</option>
+                    </select>
+                </td>
               </tr>
+              <!--row-->
               <tr>
                 <td>Decorations</td>
                 <td></td>
               </tr>
+              <!--row-->
               <tr>
-                <td>Color Scheme</td>
-                <td></td>
+                <td><label for="colors" id="color">Color Scheme</label></td>
+                <td><input type="color" name="colors"></td>
               </tr>
+              <!--row-->
               <tr>
-                <td>Additional Comments</td>
-                <td></td>
+                <td><label for="comments">Additional Comments</label></td>
+                <td>
+                    <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Please add any additonal comments here.."
+                        maxlength="50" style="background-color: lightblue;"></textarea>
+                </td>
               </tr>
+              <!--row-->
               <tr>
-                <td></td>
-                <td></td>
+                <td><label ></label></td>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
               </tr>
             </tbody>
     
