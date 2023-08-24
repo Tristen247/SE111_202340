@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WK 6 | Demo 2</title>
+    <body>
+       <h1>WK6 | 2nd Demo</h1>
+       <h3>Conditions & functions</h3>
+        <script>
+
+            var pref = prompt(`Welcome to good burger home of the good burnger, may I take your order? \n  "yes" or "no?"`)
+              
+            //function definition below 
+            function checkDinning(_pref) 
+            {
+                //conditions or conditional statements re held inside of () in js 
+                //=== <-- is exactly equal in both value AND data types 
+
+                if(_pref.toLowerCase() === `yes`)
+                {
+                    var dinning = prompt(`would you like to dine in or out? \n type "in" or "out"`)
+                    
+                    if (dinning.toLowerCase() === `in`)
+                    {
+                        return dinning.toLowerCase()
+                    }
+                    
+                    else if (dinning.toLowerCase() === `out`)
+                    {
+                        return dinning.toLowerCase()
+                    }
+
+                    else
+                    {
+                        return `bad`
+                    }
+
+                
+                }
+
+                else if(_pref.toLowerCase() === `no`)
+                {
+                    alert(`you have poor taste`)
+                    return 0
+                }
+
+                else
+                {
+                    alert("Invalid!\n please reload and re-read the directions")
+                    return `bad`
+                }
+
+                
+
+            }
+
+            var decision = checkDinning(pref)
+
+if (decision == 0)
+{
+    alert("bye")
+}
+
+else if (decision == "bad")
+{
+    alert('please reload')
+}
+
+else
+{
+    alert(`plaz tell me your order...`)
+}
+        </script>
+    
+    </body>
+    </html>

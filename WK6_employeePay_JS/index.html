@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Pay Calculator</title>
+</head>
+<body>
+    <button onclick="calculatePay()">Calculate Pay</button>
+    <script>
+        function calculatePay() {
+            var hourlyPay = Number(prompt("Please enter your hourly pay:\n"));
+            var hoursWorked = Number(prompt("Please enter the total hours worked in a two-week period:\n"));
+            
+            var grossPay = (hourlyPay * hoursWorked).toFixed(2);
+            var tax = (grossPay * 0.20).toFixed(2);
+            var netPay = (grossPay - tax).toFixed(2);
+
+            var message = "Gross Pay: $" + grossPay + "\nTax Paid: $" + tax + "\nNet Pay: $" + netPay;
+            
+            alert(message);
+            console.log("Gross Pay: $" + grossPay);
+            console.log("Tax Paid: $" + tax);
+            console.log("Net Pay: $" + netPay);
+        }
+    </script>
+
+</body>
+</html>

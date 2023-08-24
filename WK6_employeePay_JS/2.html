@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Calculator</title>
+    <style>
+
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+   <h1>Week  6 Intro Demo | Javascript</h1>
+
+   <!--IN DOCUMENT JAVASCRIPT-->
+   <script>
+    //write js here
+
+    //var = create variable
+
+    var num1 = 10 
+    var num2 = 7 
+
+    var sum = num1 + num2 
+
+    // alert() allows for a pop-up in the browser page to display info to the user 
+    //alert() --> similar to print statement in python 
+
+    //alert("hello world")
+
+    //for development - only accessible in console via dev tools 
+    console.log("hi universe")
+    console.log("the sum is: ", sum)
+
+    // (``) <-- ticks denote literal strings --> work similar to .format()
+    //${VARNAME} inside of `` to  display stored value mixed w/string mssg
+    console.log(`the sum is: \n${sum}`)
+
+    //prompt asks user to enter data - simialr to input in 
+    var fname = prompt("Enter your name: ")
+
+    alert(`hi there ${fname}`)
+
+    var age = prompt(`enter your age: `)
+
+    var dogYears = age * 7 
+
+    console.log(`In dog years your are: ${dogYears}yo`)
+
+    //if your run into string/number mixing issues --> cast as number 
+    // num = Number(num) //var num = Number(prompt("Enter a number: "))    
+   </script>
+
+
+
+</body>
+</html>
