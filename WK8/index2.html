@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W8 | JS DEMO | Arrays & Objects</title>
+</head>
+<body>
+    <h1>W8 Javascript Demo | Arrays & Objects</h1>
+
+    <div id="Output">
+    </div>
+
+    <script>
+        var name = `tj`;
+        console.log(`Variable: ${name}`);
+
+        // Arrays---------------------
+        var people = [
+            `tj`,
+            `toni`,
+            `mike`
+        ];
+
+        console.log(`array: ${people}`);
+        console.log(`first name of array: ${people[0]}`);
+
+        var firstPerson = people[0];
+
+        console.log(`first person in array: ${firstPerson}`);
+
+        people.push(`Brad`);
+        console.log(`Array: ${people}`);
+
+        console.log(`The length of arr is: ${people.length}`);
+
+        people.push(prompt(`Enter Name to be placed into the array: `));
+        console.log(`Array: ${people}`);
+
+        // Parallel Array-----------------------
+        var color = [
+            `grey`,
+            `purple`,
+            `blue`,
+            `black`,
+            `green`
+        ];
+
+        console.log(`${people[3]} for color ${color[3]}`);
+
+        // Processing Arrays
+        for(let index = 0; index < people.length; index++) {
+            // Uncomment the line below once you have the `age` array defined
+            // console.log(`${people[index]}'s age is ${age[index]}!`);
+        }
+    </script>
+</body>
+</html>
