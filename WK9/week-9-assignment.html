@@ -41,7 +41,7 @@
                 // Create a <p> element for each property in the object
                 let pTag = document.createElement('p');
 
-                // Create a textNode for each <p> and use the value of each property for the text.
+                // Create a textNode for each <p> and use the value of each property 
                 let textNode = document.createTextNode(`${key}: ${people[i][key]}`);
 
                 // Append the text node to the p tag
@@ -51,7 +51,7 @@
                 tempDiv.appendChild(pTag);
             }
 
-            // Once the for/in loop has completed, append the tempDiv to the body tag before completing the standard for loop.
+            // Once the for loop has completed, append the tempDiv to the body tag.
             bodyTag.appendChild(tempDiv);
         }
     </script>
